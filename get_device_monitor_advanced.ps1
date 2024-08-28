@@ -1,36 +1,5 @@
 function Get-MrMonitorInfo {
-
-    <#
-    .SYNOPSIS
-        Retrieves information about the monitors connected to the specified system.
-      
-    .DESCRIPTION
-        Get-MrMonitorInfo is an advanced function that retrieves information about the monitors
-        connected to the specified system.
-      
-    .PARAMETER CimSession
-        Specifies the CIM session to use for this function. Enter a variable that contains the CIM session or a command that
-        creates or gets the CIM session, such as the New-CimSession or Get-CimSession cmdlets. For more information, see
-        about_CimSessions.
-      
-    .EXAMPLE
-         Get-MrMonitorInfo
-     
-    .EXAMPLE
-         Get-MrMonitorInfo -CimSession (New-CimSession -ComputerName Server01, Server02)
-      
-    .INPUTS
-        None
-      
-    .OUTPUTS
-        Mr.MonitorInfo
-      
-    .NOTES
-        Author: Mike F Robbins
-        Website: http://mikefrobbins.com
-        Twitter: @mikefrobbins
-    #>
-    
+  
         [CmdletBinding()]
         [OutputType('Mr.MonitorInfo')]
         param (
